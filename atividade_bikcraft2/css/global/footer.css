@@ -42,3 +42,24 @@
 .footer a:hover {
   color: var(--cor_0);
 }
+
+@media (max-width: 800px) {
+  .footer > img {
+    display: none;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .footer_copy {
+    margin-top: 0px;
+  }
+}
