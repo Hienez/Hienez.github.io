@@ -1,0 +1,17 @@
+:root {
+  --cor_0: #151515;
+  --cor_1: #1e1e1e;
+  --cor_2: #262626;
+  --cor_3: #909090;
+  --cor_4: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.titulo {
+  font-size: 2rem;
+  color: var(--cor_4);
+}
