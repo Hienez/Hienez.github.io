@@ -6,74 +6,237 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pay to Up</title>
   <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body class="background">
   <div class="corpo_sistema">
-    <div class="logo_empresa"><a href="./home">Pay To Up</a></div>
-
-    <div class="barra_utilitaria">
-      <div class="barra_pesquisa">
-        <div class="lupa_pesquisa"><img src="./icones/lupa.svg" alt=""></div>
-        <p>Procure vagas, candidatos, funcionários e mais...</p>
-      </div>
-      <div class="configuracoes"><img src="./icones/engranagem.svg" alt=""></div>
-      <div class="notificação"><img src="./icones/notificação.svg" alt=""></div>
-      <div class="perfil"><img src="./imagens/147144.png" alt=""></div>
+    <div class="border_bottom border_right">
+      <div class="logo_empresa"><a href="./home">Pay To Up</a></div>
     </div>
 
-    <div class="menu">
+    <div class="barra_utilitaria border_bottom">
+      <div class="barra_pesquisa">
+        <div class="lupa_pesquisa "><img src="./icones/lupa.svg" alt=""></div>
+        <p>Procure vagas, candidatos, funcionários e mais...</p>
+      </div>
+      <div class=" flex_utilitario">
+        <div class="configuracoes icone_utilitaria"><img src="./icones/engranagem.svg" alt=""></div>
+        <div class="notificação icone_utilitaria"><img src="./icones/notificação.svg" alt=""></div>
+        <div class="perfil "><img class="" src="./imagens/147144.png" alt=""></div>
+      </div>
+
+    </div>
+    <div class="menu border_right">
       <div class="menu_primario">
-        <div>
+        <div class="nav_opcoes">
           <img src="./icones/home.svg" alt="">
           <p>Home</p>
         </div>
-        <div>
+        <div class="nav_opcoes">
           <img src="./icones/mensagem.svg" alt="">
           <p>Mensagens</p>
         </div>
-        <div>
+        <div class="nav_opcoes">
           <img src="./icones/calendario.svg" alt="">
           <p>Calendario</p>
         </div>
       </div>
-
       <div class="menu_recrutamento">
-        <p>recrutamento</p>
-        <div>
+        <p>RECRUTAMENTO</p>
+        <div class="nav_opcoes">
           <img src="./icones/vagas.svg" alt="">
           <p>Vagas</p>
         </div>
-        <div>
+        <div class="nav_opcoes">
           <img src="./icones/candidatos.svg" alt="">
           <p>Candidatos</p>
         </div>
-        <div>
+        <div class="nav_opcoes">
           <img src="./icones/painel_carreira.svg" alt="">
           <p>Painel de Carreiras</p>
         </div>
       </div>
-
       <div class="menu_organizacional">
-        <p>organizacional</p>
-        <div>
+        <p>ORGANIZACIONAL</p>
+        <div class="nav_opcoes">
           <img src="./icones/funcionario.svg" alt="">
           <p>Funcionários</p>
         </div>
-        <div>
+        <div class="nav_opcoes">
           <img src="./icones/documento.svg" alt="">
           <p>Documentos</p>
         </div>
-        <div>
+        <div class="nav_opcoes">
           <img src="./icones/grafico.svg" alt="">
           <p>Gráficos</p>
         </div>
-
       </div>
     </div>
 
+    <div class="conteudo_principal">
+      <div>
+        <h3>Destaques</h3>
+        <div class="flex_card">
+          <div class="card_funcao">
+            <img class="card_img" src="./imagens/hand.jfif" alt="">
+            <p class="titulo_funcao">Adicionar funcionário</p>
+            <svg class="extensao" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M3.99038 17.2115C3.66986 17.2115 3.38941 17.0913 3.14903 16.851C2.90864 16.6106 2.78845 16.3301 2.78845 16.0096V3.99038C2.78845 3.66986 2.90864 3.38941 3.14903 3.14903C3.38941 2.90864 3.66986 2.78845 3.99038 2.78845H8.97836C9.14863 2.78845 9.29136 2.84638 9.40654 2.96223C9.52173 3.0781 9.57932 3.22166 9.57932 3.39292C9.57932 3.56419 9.52173 3.70659 9.40654 3.8201C9.29136 3.93362 9.14863 3.99038 8.97836 3.99038H3.99038V16.0096H16.0096V11.0216C16.0096 10.8514 16.0675 10.7086 16.1834 10.5934C16.2992 10.4783 16.4428 10.4207 16.6141 10.4207C16.7853 10.4207 16.9277 10.4783 17.0413 10.5934C17.1548 10.7086 17.2115 10.8514 17.2115 11.0216V16.0096C17.2115 16.3301 17.0913 16.6106 16.851 16.851C16.6106 17.0913 16.3301 17.2115 16.0096 17.2115H3.99038ZM7.61878 12.376C7.51021 12.261 7.45258 12.1234 7.4459 11.9631C7.43923 11.8029 7.49598 11.6627 7.61618 11.5425L15.1683 3.99038H11.3822C11.2119 3.99038 11.0692 3.93245 10.954 3.8166C10.8388 3.70073 10.7812 3.55717 10.7812 3.38591C10.7812 3.21463 10.8388 3.07224 10.954 2.95872C11.0692 2.84521 11.2119 2.78845 11.3822 2.78845H16.6106C16.7808 2.78845 16.9236 2.84604 17.0388 2.96123C17.1539 3.07641 17.2115 3.21914 17.2115 3.38941V8.61778C17.2115 8.78805 17.1536 8.93078 17.0378 9.04596C16.9219 9.16115 16.7783 9.21874 16.6071 9.21874C16.4358 9.21874 16.2934 9.16115 16.1799 9.04596C16.0664 8.93078 16.0096 8.78805 16.0096 8.61778V4.85175L8.45752 12.4038C8.34478 12.5107 8.20642 12.5641 8.04244 12.5641C7.87846 12.5641 7.73724 12.5014 7.61878 12.376Z" fill="white" />
+            </svg>
+          </div>
+          <div class="card_funcao">
+            <img class="card_img" src="./imagens/Excluir.jfif" alt="">
+            <p class="titulo_funcao">Excluir funcionário</p>
+            <svg class="extensao" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M3.99038 17.2115C3.66986 17.2115 3.38941 17.0913 3.14903 16.851C2.90864 16.6106 2.78845 16.3301 2.78845 16.0096V3.99038C2.78845 3.66986 2.90864 3.38941 3.14903 3.14903C3.38941 2.90864 3.66986 2.78845 3.99038 2.78845H8.97836C9.14863 2.78845 9.29136 2.84638 9.40654 2.96223C9.52173 3.0781 9.57932 3.22166 9.57932 3.39292C9.57932 3.56419 9.52173 3.70659 9.40654 3.8201C9.29136 3.93362 9.14863 3.99038 8.97836 3.99038H3.99038V16.0096H16.0096V11.0216C16.0096 10.8514 16.0675 10.7086 16.1834 10.5934C16.2992 10.4783 16.4428 10.4207 16.6141 10.4207C16.7853 10.4207 16.9277 10.4783 17.0413 10.5934C17.1548 10.7086 17.2115 10.8514 17.2115 11.0216V16.0096C17.2115 16.3301 17.0913 16.6106 16.851 16.851C16.6106 17.0913 16.3301 17.2115 16.0096 17.2115H3.99038ZM7.61878 12.376C7.51021 12.261 7.45258 12.1234 7.4459 11.9631C7.43923 11.8029 7.49598 11.6627 7.61618 11.5425L15.1683 3.99038H11.3822C11.2119 3.99038 11.0692 3.93245 10.954 3.8166C10.8388 3.70073 10.7812 3.55717 10.7812 3.38591C10.7812 3.21463 10.8388 3.07224 10.954 2.95872C11.0692 2.84521 11.2119 2.78845 11.3822 2.78845H16.6106C16.7808 2.78845 16.9236 2.84604 17.0388 2.96123C17.1539 3.07641 17.2115 3.21914 17.2115 3.38941V8.61778C17.2115 8.78805 17.1536 8.93078 17.0378 9.04596C16.9219 9.16115 16.7783 9.21874 16.6071 9.21874C16.4358 9.21874 16.2934 9.16115 16.1799 9.04596C16.0664 8.93078 16.0096 8.78805 16.0096 8.61778V4.85175L8.45752 12.4038C8.34478 12.5107 8.20642 12.5641 8.04244 12.5641C7.87846 12.5641 7.73724 12.5014 7.61878 12.376Z" fill="white" />
+            </svg>
+          </div>
+          <div class="card_funcao">
+            <img class="card_img" src="./imagens/pagamento.jfif" alt="">
+            <p class="titulo_funcao">Gerar pagamento</p>
+            <svg class="extensao" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M3.99038 17.2115C3.66986 17.2115 3.38941 17.0913 3.14903 16.851C2.90864 16.6106 2.78845 16.3301 2.78845 16.0096V3.99038C2.78845 3.66986 2.90864 3.38941 3.14903 3.14903C3.38941 2.90864 3.66986 2.78845 3.99038 2.78845H8.97836C9.14863 2.78845 9.29136 2.84638 9.40654 2.96223C9.52173 3.0781 9.57932 3.22166 9.57932 3.39292C9.57932 3.56419 9.52173 3.70659 9.40654 3.8201C9.29136 3.93362 9.14863 3.99038 8.97836 3.99038H3.99038V16.0096H16.0096V11.0216C16.0096 10.8514 16.0675 10.7086 16.1834 10.5934C16.2992 10.4783 16.4428 10.4207 16.6141 10.4207C16.7853 10.4207 16.9277 10.4783 17.0413 10.5934C17.1548 10.7086 17.2115 10.8514 17.2115 11.0216V16.0096C17.2115 16.3301 17.0913 16.6106 16.851 16.851C16.6106 17.0913 16.3301 17.2115 16.0096 17.2115H3.99038ZM7.61878 12.376C7.51021 12.261 7.45258 12.1234 7.4459 11.9631C7.43923 11.8029 7.49598 11.6627 7.61618 11.5425L15.1683 3.99038H11.3822C11.2119 3.99038 11.0692 3.93245 10.954 3.8166C10.8388 3.70073 10.7812 3.55717 10.7812 3.38591C10.7812 3.21463 10.8388 3.07224 10.954 2.95872C11.0692 2.84521 11.2119 2.78845 11.3822 2.78845H16.6106C16.7808 2.78845 16.9236 2.84604 17.0388 2.96123C17.1539 3.07641 17.2115 3.21914 17.2115 3.38941V8.61778C17.2115 8.78805 17.1536 8.93078 17.0378 9.04596C16.9219 9.16115 16.7783 9.21874 16.6071 9.21874C16.4358 9.21874 16.2934 9.16115 16.1799 9.04596C16.0664 8.93078 16.0096 8.78805 16.0096 8.61778V4.85175L8.45752 12.4038C8.34478 12.5107 8.20642 12.5641 8.04244 12.5641C7.87846 12.5641 7.73724 12.5014 7.61878 12.376Z" fill="white" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="funcionarios">
+        <h3>Funcionários</h3>
+        <div class="lista_funcionarios">
+          <div class="funcionarios_status">
+            <p class="funcionarios_status_ativo">Todos</p>
+            <p>Ativo</p>
+            <p>Desligados</p>
+          </div>
+          <div class="grid_funcionarios">
+            <p class="filtro_funcionarios">Nome do funcionário</p>
+            <p class="filtro_funcionarios">ID</p>
+            <p class="filtro_funcionarios">Performance</p>
+            <p class="filtro_funcionarios">Setor</p>
+            <p class="filtro_funcionarios">Função</p>
+            <p class="filtro_funcionarios">Contratação</p>
+            <p class="filtro_funcionarios">Status</p>
+
+
+            <div class="flex_centralizado grid_margin_left"><img class="icone_perfil" src="./imagens/funcionarios/Unknown_person.jpg" alt="">
+              <p>Funcionario da Silva</p>
+            </div>
+            <p>000000</p>
+            <div class="flex_centralizado"><img src="./icones/estrela.svg" alt="">
+              <p>0.00</p>
+            </div>
+            <p>Indefinido</p>
+            <p>Indefinido</p>
+            <p>00/00/00</p>
+            <p class="grid_margin_right ">Inativo</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
   </div>
+  <div class="funcionario">
+    <div class="info_superior">
+      <div class="flex_perfil">
+        <div class="foto_perfil"><img src="./imagens/funcionarios/Unknown_person.jpg" alt=""></div>
+        <div>
+          <span>Nome Funcionário</span>
+          <span>0 Anos</span>
+          <span>Função</span>
+        </div>
+      </div>
+      <div class="info_sup_dir">
+        <div class="flex_alinhado">
+          <div><img src="./icones/editar_informações.svg" alt=""></div>
+          <span>Editar Informações</span>
+        </div>
+        <span class="display_info">Data de Admissão: 00/00/0000</span>
+      </div>
+    </div>
+    <div class="info_funcionario">
+      <div class="flex_column">
+        <p class="display_info">Nome Completo: Nome Funcionario</p>
+        <p class="display_info">Data de Nascimento: 00/00/0000</p>
+        <p class="display_info">CPF: 000.000.000-00</p>
+      </div>
+      <div class="flex_column">
+        <p class="display_info">RG: 00.000.000-0</p>
+        <p class="display_info">Celular: (00)00000-0000</p>
+        <p class="display_info">Email: Exemplo@gmail.com</p>
+        <p class="display_info">Titulo de eleitor: 000000000000</p>
+      </div>
+      <div class="flex_column">
+        <p class="display_info">Carteira de Trabalho: 000.00000.00-0</p>
+        <p class="display_info">Endereço: Rua logo ali</p>
+        <p class="display_info">Bairro: Jardim ali perto</p>
+        <p class="display_info">CEP: 00000-000</p>
+      </div>
+      <div class="flex_column">
+        <p class="display_info">ID: 00000</p>
+        <p class="display_info">Cidade: São Paulo</p>
+        <p class="display_info">Estado: SP</p>
+      </div>
+    </div>
+    <div class="func_botoes">
+      <p>Holerite</p>
+      <p>Demissao</p>
+    </div>
+  </div>
+  <div class="holerite">
+    <div class="holerite_superior">
+      <div class="flex_perfil">
+        <div class="foto_perfil"><img src="./imagens/unip.png" alt=""></div>
+        <div>
+          <span>Assupero Ensino Superior Ltda.</span>
+          <span>CNPJ: 06.099.229/0001-01</span>
+          <span>Rua Cancioneiro Popular Nº210</span>
+        </div>
+      </div>
+      <div class="holerite_sup_dir">
+        <span class="display_info">Data: 00/00/0000</span>
+      </div>
+    </div>
+
+    <div class="holerite_func_info">
+      <p class="display_info">ID: <span id="id">000000</span></p>
+      <p class="display_info">Nome Completo: <span id="nome_funcionario">Nome Funcionario</span></p>
+      <p class="display_info">CPF: 000.000.000-00</p>
+      <p class="display_info">Cargo: Indefinido</p>
+    </div>
+    <div class="grid_holerite">
+      <h3 class="display_info holerite_header">Proventos</h3>
+      <p>Salário:</p>
+      <p class="valor_positivo" id="salario_bruto">R$0.000,00</p>
+      <p>Horas extras:</p>
+      <p class="valor_positivo" id="valor_horas_extras">R$000,00</p>
+      <p class="saldo">Total:<span class="valor_positivo" id="Salario_liquido">R$0.000,00</span></p>
+    </div>
+    <div class="grid_holerite">
+      <h3 class="display_info holerite_header">Descontos</h3>
+      <p>INSS do mês:</p>
+      <p class="valor_negativo" id="inss">R$000,00</p>
+      <p>IRRF do mês:</p>
+      <p class="valor_negativo" id="irrf">R$000,00</p>
+      <p>IRRF do mês:</p>
+      <p class="valor_negativo" id="irrf">R$000,00</p>
+      <p>Vale-refeição:</p>
+      <p class="valor_negativo" id="refeicao">R$000,00</p>
+      <p>Vale-transporte:</p>
+      <p class="valor_negativo" id="transporte">R$000,00</p>
+      <p>Coparticipação de convênio médico:</p>
+      <p class="valor_negativo" id="transporte">R$000,00</p>
+      <p class="saldo">Total:<span class="valor_negativo" id="desconto_total">R$0.000,00</span></p>
+    </div>
+
+  </div>
+
 </body>
+
+<script type="module" src="./script.js"></script>
 
 </html>

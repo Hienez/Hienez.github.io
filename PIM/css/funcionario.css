@@ -1,0 +1,224 @@
+.funcionario {
+  position: absolute;
+  width: 1100px;
+  height: 700px;
+  top: 50%;
+  margin-top: -350px;
+  left: 50%;
+  margin-left: -550px;
+  z-index: 2;
+  background-color: var(--cor_1);
+  color: var(--cor_3);
+  border-radius: 15px;
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+  display: none;
+}
+
+.funcionario::before,
+.holerite::before {
+  display: block;
+  content: url(../icones/close.svg);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.info_superior,
+.holerite_superior {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foto_perfil img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.flex_perfil {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.flex_perfil span:first-child {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.flex_perfil div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1.25rem;
+}
+
+.info_sup_dir {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.info_sup_dir div,
+.holerite_sup_dir div {
+  cursor: pointer;
+}
+
+.info_superior,
+.holerite_superior {
+  margin: 50px 70px 50px 50px;
+}
+
+.info_funcionario {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.info_funcionario div {
+  border-bottom: solid 1px var(--cor_2);
+  margin: 0 50px;
+}
+
+.info_funcionario div:last-child {
+  border-bottom: none;
+}
+
+.display_info {
+  padding: 12px 20px;
+  background-color: var(--cor_2);
+  border-radius: 10px;
+  font-size: 0.875rem;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.flex_column {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.func_botoes {
+  display: flex;
+  gap: 100px;
+  color: white;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.func_botoes p {
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.func_botoes p:first-child {
+  background-color: var(--income);
+}
+
+.func_botoes p:last-child {
+  background-color: var(--outcome);
+}
+
+/* Holerite */
+
+.holerite {
+  position: absolute;
+  width: 1100px;
+  height: 700px;
+  top: 50%;
+  margin-top: -350px;
+  left: 50%;
+  margin-left: -550px;
+  z-index: 2;
+  background-color: var(--cor_1);
+  color: var(--cor_3);
+  border-radius: 15px;
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+  display: none;
+}
+
+.holerite_superior {
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.holerite_sup_dir {
+  display: flex;
+  align-items: end;
+}
+
+.holerite::after {
+  display: block;
+  content: url(../icones/back.svg);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.holerite_func_info {
+  display: flex;
+  border-bottom: solid 1px var(--cor_2);
+  margin-left: 75px;
+  margin-right: 75px;
+  justify-content: space-around;
+}
+
+.holerite_func_info p {
+  margin-top: 0px;
+}
+
+.grid_holerite {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.grid_holerite p {
+  margin: 0px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.holerite_header {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.valor_positivo,
+.valor_negativo,
+.saldo {
+  text-align: end;
+}
+
+.saldo {
+  grid-column: 1/-1;
+  padding-top: 10px;
+  padding-right: 10px;
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.saldo::before {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 107%;
+  background-color: var(--cor_2);
+  position: absolute;
+  top: 0px;
+  left: -31px;
+}
+
+.valor_positivo {
+  color: var(--income);
+}
+
+.valor_negativo {
+  color: var(--outcome);
+}

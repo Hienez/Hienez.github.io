@@ -4,6 +4,9 @@
   --cor_2: #262626;
   --cor_3: #909090;
   --cor_4: #fff;
+
+  --income: #00b75a;
+  --outcome: #ff6036;
 }
 
 a {
@@ -14,4 +17,32 @@ a {
 .titulo {
   font-size: 2rem;
   color: var(--cor_4);
+}
+
+body,
+html,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+html {
+  font-family: roboto;
+}
+
+.flex_centralizado {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.flex_centralizado {
+  justify-content: center;
+}
+
+.flex_alinhado {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
